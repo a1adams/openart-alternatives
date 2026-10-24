@@ -1,0 +1,285 @@
+{
+  "keyword": "openart ai alternative",
+  "title": "OpenArt AI Alternative: 7 Image and Video Platforms Compared (2026)",
+  "lastChecked": "2026-10-24",
+  "capabilityChecks": [
+    {
+      "key": "manyImageAndVideoModels",
+      "label": "Many image and video models"
+    },
+    {
+      "key": "savedMultiStepWorkflows",
+      "label": "Saved multi-step workflows"
+    },
+    {
+      "key": "referenceImagesForConsistency",
+      "label": "Reference images for consistency"
+    },
+    {
+      "key": "imageEditing",
+      "label": "Image editing"
+    },
+    {
+      "key": "api",
+      "label": "API"
+    },
+    {
+      "key": "mcpServer",
+      "label": "MCP server"
+    },
+    {
+      "key": "freePlanThatGenerates",
+      "label": "Free plan that generates"
+    }
+  ],
+  "tools": [
+    {
+      "n": 1,
+      "name": "Wireflow",
+      "tagline": "Best overall for wiring many image, video and audio models into one board",
+      "homepage": "https://www.wireflow.ai/",
+      "docs": "https://www.wireflow.ai/docs/api/overview",
+      "pricing": "https://www.wireflow.ai/pricing",
+      "claudeConnection": "Custom connector, OAuth sign-in",
+      "restApi": true,
+      "modelSupport": "100+ image, video and audio models as nodes",
+      "freeTier": "unverified",
+      "repo": null,
+      "note": null,
+      "quickstart": [
+        {
+          "label": "Add the Wireflow connector to Claude Code, from the wireflowINC/skills README. Then run /mcp to sign in.",
+          "lang": "bash",
+          "code": "claude mcp add --transport http wireflow https://www.wireflow.ai/api/mcp"
+        },
+        {
+          "label": "Or run a saved board from code: send its input values to this endpoint with an API key, then poll the execution. The request format is in the API reference linked under Docs.",
+          "lang": "text",
+          "code": "POST /api/v1/workflows/{id}/run"
+        }
+      ],
+      "moneyPage": "https://www.wireflow.ai/node-based-image-generation",
+      "moneyPageLabel": "Wireflow node based image generation page",
+      "capabilities": {
+        "manyImageAndVideoModels": true,
+        "savedMultiStepWorkflows": true,
+        "referenceImagesForConsistency": true,
+        "imageEditing": true,
+        "api": true,
+        "mcpServer": true,
+        "freePlanThatGenerates": false
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 2,
+      "name": "Krea",
+      "tagline": "Best for many models plus a node editor on a free plan",
+      "homepage": "https://www.krea.ai/",
+      "docs": "https://www.krea.ai/docs/developers/mcp.md",
+      "pricing": "https://www.krea.ai/pricing",
+      "claudeConnection": "Hosted MCP, OAuth sign-in",
+      "restApi": true,
+      "modelSupport": null,
+      "freeTier": "yes",
+      "repo": null,
+      "note": "API calls draw from a separate USD balance on the workspace, not from the app's compute units.",
+      "quickstart": [
+        {
+          "label": "Add Krea's hosted MCP server to Claude Code, from Krea's MCP docs. You sign in with your Krea account, so no API key is needed.",
+          "lang": "bash",
+          "code": "claude mcp add --transport http krea-ai https://api.krea.ai/mcp"
+        }
+      ],
+      "capabilities": {
+        "manyImageAndVideoModels": true,
+        "savedMultiStepWorkflows": true,
+        "referenceImagesForConsistency": true,
+        "imageEditing": true,
+        "api": true,
+        "mcpServer": true,
+        "freePlanThatGenerates": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 3,
+      "name": "Flora",
+      "tagline": "Best for creative teams sharing one canvas",
+      "homepage": "https://flora.ai/",
+      "docs": "https://developer.flora.ai/api/",
+      "pricing": "https://flora.ai/pricing",
+      "claudeConnection": "MCP server on paid plans",
+      "restApi": true,
+      "modelSupport": "50+ models",
+      "freeTier": "yes",
+      "repo": null,
+      "note": "API and MCP are included on Starter, Pro and Max. Techniques are authored in the app; the API runs them.",
+      "quickstart": [
+        {
+          "label": "Run a saved Technique by its slug, from Flora's API docs. The response returns a run_id and a poll URL; the docs say to poll every 2 to 5 seconds.",
+          "lang": "text",
+          "code": "POST https://app.flora.ai/api/v1/techniques/{slug}/runs"
+        }
+      ],
+      "capabilities": {
+        "manyImageAndVideoModels": true,
+        "savedMultiStepWorkflows": true,
+        "referenceImagesForConsistency": null,
+        "imageEditing": true,
+        "api": true,
+        "mcpServer": true,
+        "freePlanThatGenerates": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 4,
+      "name": "Higgsfield",
+      "tagline": "Best for many video models and ready-made creator skills",
+      "homepage": "https://higgsfield.ai/",
+      "docs": "https://higgsfield.ai/api",
+      "pricing": "https://higgsfield.ai/pricing",
+      "claudeConnection": "MCP server and ChatGPT plugin",
+      "restApi": true,
+      "modelSupport": "30+ models",
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "Plan prices could not be read from the pricing page (checked 2026-10-11).",
+      "quickstart": [
+        {
+          "label": "The Higgsfield MCP server URL, from Higgsfield's MCP page. Add it as a connector in Claude or Claude Code.",
+          "lang": "text",
+          "code": "https://mcp.higgsfield.ai/mcp"
+        }
+      ],
+      "capabilities": {
+        "manyImageAndVideoModels": true,
+        "savedMultiStepWorkflows": null,
+        "referenceImagesForConsistency": null,
+        "imageEditing": true,
+        "api": true,
+        "mcpServer": true,
+        "freePlanThatGenerates": null
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 5,
+      "name": "Magnific Spaces",
+      "tagline": "Best for repeatable workflows inside a Magnific plan",
+      "homepage": "https://www.magnific.com/spaces",
+      "docs": null,
+      "pricing": "https://www.magnific.com/pricing",
+      "claudeConnection": null,
+      "restApi": null,
+      "modelSupport": null,
+      "freeTier": "yes",
+      "repo": null,
+      "note": "Spaces has no separate price: it is included in Magnific plans, and free users can create up to 3 Spaces.",
+      "quickstart": null,
+      "capabilities": {
+        "manyImageAndVideoModels": null,
+        "savedMultiStepWorkflows": true,
+        "referenceImagesForConsistency": null,
+        "imageEditing": true,
+        "api": null,
+        "mcpServer": null,
+        "freePlanThatGenerates": null
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 6,
+      "name": "Leonardo AI",
+      "tagline": "Best for image generation that you also call from code",
+      "homepage": "https://leonardo.ai/",
+      "docs": null,
+      "pricing": "https://docs.leonardo.ai/docs/payg-guide",
+      "claudeConnection": null,
+      "restApi": true,
+      "modelSupport": null,
+      "freeTier": "unverified",
+      "repo": "Leonardo-Interactive/leonardo-python-sdk",
+      "note": "The linked repository is the official Python SDK. API credits are bought separately from the web app plans.",
+      "quickstart": null,
+      "capabilities": {
+        "manyImageAndVideoModels": null,
+        "savedMultiStepWorkflows": null,
+        "referenceImagesForConsistency": null,
+        "imageEditing": null,
+        "api": true,
+        "mcpServer": null,
+        "freePlanThatGenerates": null
+      },
+      "live": {
+        "stars": 26,
+        "lastPush": "2026-08-04T00:43:49Z",
+        "latestRelease": "v7.0.0",
+        "latestReleaseDate": "2026-02-05",
+        "checkedAt": "2026-10-24"
+      }
+    },
+    {
+      "n": 7,
+      "name": "Adobe Firefly",
+      "tagline": "Best for creators already working in Adobe apps",
+      "homepage": "https://www.adobe.com/products/firefly.html",
+      "docs": null,
+      "pricing": "https://www.adobe.com/products/firefly/plans.html",
+      "claudeConnection": null,
+      "restApi": null,
+      "modelSupport": "Adobe and partner models",
+      "freeTier": "yes",
+      "repo": null,
+      "note": "Prices are shown in the visitor's local currency (checked 2026-10-11).",
+      "quickstart": null,
+      "capabilities": {
+        "manyImageAndVideoModels": true,
+        "savedMultiStepWorkflows": null,
+        "referenceImagesForConsistency": true,
+        "imageEditing": true,
+        "api": null,
+        "mcpServer": null,
+        "freePlanThatGenerates": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    }
+  ]
+}
