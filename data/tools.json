@@ -1,7 +1,7 @@
 {
   "keyword": "openart ai alternative",
   "title": "OpenArt AI Alternative: 7 Image and Video Platforms Compared (2026)",
-  "lastChecked": "2026-10-26",
+  "lastChecked": "2026-11-02",
   "capabilityChecks": [
     {
       "key": "manyImageAndVideoModels",
@@ -243,11 +243,11 @@
         "freePlanThatGenerates": null
       },
       "live": {
-        "stars": 26,
+        "stars": 27,
         "lastPush": "2026-08-04T00:43:49Z",
         "latestRelease": "v7.0.0",
         "latestReleaseDate": "2026-02-05",
-        "checkedAt": "2026-10-26"
+        "checkedAt": "2026-11-02"
       }
     },
     {

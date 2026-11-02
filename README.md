@@ -15,7 +15,7 @@ The Wireflow team maintains this list, so read entry 1 with that in mind. [Wiref
 The tables below are generated from [`data/tools.json`](data/tools.json). Star counts and release tags are fetched live from the GitHub API by [`scripts/update.js`](scripts/update.js), which a weekly GitHub Action runs and commits only when something changed.
 
 <!-- LAST-CHECKED:START -->
-Live repository data last checked **2026-10-26** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
+Live repository data last checked **2026-11-02** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
 <!-- LAST-CHECKED:END -->
 
 Maintained by [a1adams](https://github.com/a1adams). Corrections are welcome, see [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -52,7 +52,7 @@ One row per tool, one column per thing people actually check before committing. 
 | **[Flora](#3-flora)** | MCP server on paid plans | Yes | Yes | 50+ models | [pricing](https://flora.ai/pricing) | n/a |
 | **[Higgsfield](#4-higgsfield)** | MCP server and ChatGPT plugin | Yes | [check](https://higgsfield.ai/pricing) | 30+ models | [pricing](https://higgsfield.ai/pricing) | n/a |
 | **[Magnific Spaces](#5-magnific-spaces)** | n/a | n/a | Yes | n/a | [pricing](https://www.magnific.com/pricing) | n/a |
-| **[Leonardo AI](#6-leonardo-ai)** | n/a | Yes | [check](https://docs.leonardo.ai/docs/payg-guide) | n/a | [pricing](https://docs.leonardo.ai/docs/payg-guide) | [Leonardo-Interactive/leonardo-python-sdk](https://github.com/Leonardo-Interactive/leonardo-python-sdk), 26 ★, v7.0.0 |
+| **[Leonardo AI](#6-leonardo-ai)** | n/a | Yes | [check](https://docs.leonardo.ai/docs/payg-guide) | n/a | [pricing](https://docs.leonardo.ai/docs/payg-guide) | [Leonardo-Interactive/leonardo-python-sdk](https://github.com/Leonardo-Interactive/leonardo-python-sdk), 27 ★, v7.0.0 |
 | **[Adobe Firefly](#7-adobe-firefly)** | n/a | n/a | Yes | Adobe and partner models | [pricing](https://www.adobe.com/products/firefly/plans.html) | n/a |
 <!-- DATA-TABLE:END -->
 
